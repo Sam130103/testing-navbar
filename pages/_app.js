@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/globals.css';
 
 const MyApp = ({ Component, pageProps }) => (

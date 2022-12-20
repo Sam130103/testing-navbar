@@ -1,102 +1,106 @@
+'use client';
 
 // import styles from '../styles';
-
 import { motion } from 'framer-motion';
-
-
 // import { navVariants } from '../utils/motion';
 // import navcss from '../public/Navbar/navbar.css'
 // import Navcss from '../styles'
-export default function Navbar  () {
-   return(
-    <div>
-  <body style={{backgroundColor:"#1A2238"}}>
-   <header style={{backgroundColor:"#1A2238"}}className="header" id="header" >
-       <nav  className="nav container"  >
-            <div>
+const Navbar = () => (
+  <div>
+    <body style={{ backgroundColor: '#1A2238' }}>
+      <header
+        style={{ backgroundColor: '#1A2238' }}
+        className="header"
+        id="header"
+      >
+        <nav className="nav container">
+          <div>
             <motion.a
-                initial={{x:"-100vh"}} 
-                animate={{x:0}}
-                transition={{type:"spring" ,stiffness:"50",duration:5}}
-                className="nav__logo" style={{color:"white",marginRight:"15px"}}>Technovanza</motion.a>
-            </div>
-         
-            <motion.div
-            initial={{x:"+100vh"}} 
-            animate={{x:0}}
-            transition={{type:"spring" ,stiffness:"50",duration:5}}
-            className="nav__menu" id="nav-menu">
-                <ul className="nav__list">
-                <li class="nav__item">
-                <a href="#home" class="nav__link active-link">
-                    <i class='bx bx-home-alt nav__icon'></i>
-                    <span class="nav__name">Home</span>
+              initial={{ x: '-100vh' }}
+              animate={{ x: 0 }}
+              transition={{ type: 'spring', stiffness: '50', duration: 5 }}
+              className="nav__logo"
+              style={{ color: 'white', marginRight: '15px' }}
+            >
+              Technovanza
+            </motion.a>
+          </div>
+
+          <motion.div
+            initial={{ x: '+100vh' }}
+            animate={{ x: 0 }}
+            transition={{ type: 'spring', stiffness: '50', duration: 5 }}
+            className="nav__menu"
+            id="nav-menu"
+          >
+            <ul className="nav__list">
+              <li className="nav__item">
+                <a href="#home" className="nav__link active-link">
+                  <i className="bx bx-home-alt nav__icon" />
+                  <span className="nav__name">Home</span>
                 </a>
-            </li>
-                    <li className="nav__item">
-                    <a href="/about" class="nav__link">
-                    <i class='bx bx-user nav__icon'></i>
-                    <span class="nav__name" >About</span>
+              </li>
+              <li className="nav__item">
+                <a href="/about" className="nav__link">
+                  <i className="bx bx-user nav__icon" />
+                  <span className="nav__name">About</span>
                 </a>
-                    </li>
+              </li>
 
+              <li className="nav__item">
+                <a href="/skills" className="nav__link">
+                  <i className="bx bx-book-alt nav__icon" />
+                  <span className="nav__name">Skills</span>
+                </a>
+              </li>
 
-                    <li className="nav__item">
-                        <a href="/skills" className="nav__link">
-                            <i className='bx bx-book-alt nav__icon'></i>
-                            <span className="nav__name">Skills</span>
-                        </a>
-                    </li>
+              <li className="nav__item">
+                <a href="/portfolio" className="nav__link">
+                  <i className="bx bx-briefcase-alt nav__icon" />
+                  <span className="nav__name">Portfolio</span>
+                </a>
+              </li>
 
-                    <li className="nav__item">
-                        <a href="/portfolio" className="nav__link">
-                            <i className='bx bx-briefcase-alt nav__icon'></i>
-                            <span className="nav__name">Portfolio</span>
-                        </a>
-                    </li>
-
-                    <li className="nav__item">
-                        <a href="/contactme" className="nav__link">
-                            <i className='bx bx-message-square-detail nav__icon'></i>
-                            <span className="nav__name">Contactme</span>
-                        </a>
-                    </li>
-                </ul>
-            </motion.div>
+              <li className="nav__item">
+                <a href="/contactme" className="nav__link">
+                  <i className="bx bx-message-square-detail nav__icon" />
+                  <span className="nav__name">Contactme</span>
+                </a>
+              </li>
+            </ul>
+          </motion.div>
         </nav>
-    </header>
-</body>
+      </header>
+    </body>
   </div>
-   )
-  // <motion.nav
-  //   variants={navVariants}
-  //   initial="hidden"
-  //   whileInView="show"
-  //   classNameName={`${styles.xPaddings} py-8 fixed`}
-  // >
-  //   <div classNameName="absolute w-[50%] inset-0 gradient-01" />
-  //   <div
-  //     classNameName={`${styles.innerWidth} mx-auto flex justify-between gap-8`}
-  //   >
-  //     <img
-  //       src="/search.svg"
-  //       alt="search"
-  //       classNameName="w-[24px] h-[24px] object-contain"
-  //     />
-  //     <h2 classNameName="font-extrabold text-[24px] leading-[30.24px] text-white">
-  //       METAVERSUS
-  //     </h2>
-  //     <img
-  //       src="/menu.svg"
-  //       alt="menu"
-  //       classNameName="w-[24px] h-[24px] object-contain"
-  //     />
-  //   </div>
-  // </motion.nav>
- 
-  
-}
-// export default Navbar;
+);
+// <motion.nav
+//   variants={navVariants}
+//   initial="hidden"
+//   whileInView="show"
+//   classNameName={`${styles.xPaddings} py-8 fixed`}
+// >
+//   <div classNameName="absolute w-[50%] inset-0 gradient-01" />
+//   <div
+//     classNameName={`${styles.innerWidth} mx-auto flex justify-between gap-8`}
+//   >
+//     <img
+//       src="/search.svg"
+//       alt="search"
+//       classNameName="w-[24px] h-[24px] object-contain"
+//     />
+//     <h2 classNameName="font-extrabold text-[24px] leading-[30.24px] text-white">
+//       METAVERSUS
+//     </h2>
+//     <img
+//       src="/menu.svg"
+//       alt="menu"
+//       classNameName="w-[24px] h-[24px] object-contain"
+//     />
+//   </div>
+// </motion.nav>
+
+export default Navbar;
 
 // import React from "react";
 // import { navLinks } from "../utils/data";
@@ -119,7 +123,6 @@ export default function Navbar  () {
 //     </header>
 //   );
 // }
-
 
 // import { useState, useEffect } from 'react'
 // import { navLinks } from "../utils/data";
@@ -152,11 +155,10 @@ export default function Navbar  () {
 //               })}
 //     </nav>
 //     </div>
-   
+
 //   )
 // }
 // export default Navbar;
-
 
 // import React, { useState } from "react";
 // import Image from 'next/image';
@@ -166,7 +168,6 @@ export default function Navbar  () {
 // import { MotionConfig } from "framer-motion";
 // import "bootstrap/dist/css/bootstrap.min.css";
 // // import "../styles/globals.css";
-
 
 // export default function NavBar() {
 //     const [active, setActive] = useState(false);
@@ -183,7 +184,7 @@ export default function Navbar  () {
 //         setActive(!active);
 //     };
 //     // classNameName='flex items-center flex-wrap bg-black p-3 sm:px-10 '
-//     return (    
+//     return (
 //         <>
 //           <div>
 //           <script src="https://bootstrapcreative.com/wp-bc/wp-content/themes/wp-bootstrap/codepen/bootstrapcreative.js?v=4"></script>
@@ -209,9 +210,7 @@ export default function Navbar  () {
 //       </li>
 //     </ul>
 //     <a className="navbar-brand d-none d-lg-block" href="#" style={{color:"white"}}>Navbar</a>
-    
-    
-    
+
 //     <ul className="navbar-nav">
 //       <li className="nav-item">
 //         <a className="nav-link" href="#">Link</a>
@@ -225,7 +224,7 @@ export default function Navbar  () {
 //     </ul>
 //   </div>
 // </nav>
-          
+
 //           </div>
 //         </>
 //     );
