@@ -1,10 +1,10 @@
 import '../styles/globals.css';
+import { Background } from '../components';
 
 const RootLayout = ({ children }) => (
   <html lang="en">
     <head>
-      <link rel="preconnect" href="https://stijndv.com" />
-      <link rel="stylesheet" href="https://stijndv.com/fonts/Eudoxus-Sans.css" />
+      <Background />
     </head>
     <body>{children}</body>
   </html>
