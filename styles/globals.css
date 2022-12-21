@@ -208,6 +208,9 @@ img {
 }
 
 /*=============== NAV ===============*/
+.navbarFont{
+  font-family: "Times New Roman", Times, serif;
+}
 .nav {
   height: var(--header-height);
   display: flex;

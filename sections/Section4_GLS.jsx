@@ -3,12 +3,11 @@
 import { motion } from 'framer-motion';
 
 import styles from '../styles';
-import { startingFeatures } from '../constants';
-import { StartSteps, TitleText, TypingText } from '../components';
+import { TitleText, TypingText } from '../components';
 import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
 
 const GlsSophia = () => (
-  <section className={`${styles.paddings} relative z-10`} >
+  <section className={`${styles.paddings} relative z-10`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -34,9 +33,7 @@ const GlsSophia = () => (
         <TitleText title={<><span className="font-bold text-4xl">Sophia: The Social Humanoid</span> <br /><span className="text-2xl font-bold">at Techno<span style={{ color: '#26A699' }}>Vanza</span></span> </>} />
         <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
           <div>  <div className={`${styles.flexCenter} flex-row`}>
-            <div
-
-            >
+            <div>
               <p className="font-bold text-[20px] text-white">
                 <div>
 

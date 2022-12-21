@@ -3,9 +3,7 @@
 import dynamic from 'next/dynamic';
 import { TypingText, TitleText } from './CustomTexts';
 import ExploreEvent from './Explore_Events';
-import StartSteps from './StartSteps';
-import NewFeatures from './NewFeatures';
-import InsightCard from './InsightCard';
+import InsightCard from './InsightGLS';
 import Footer from './Footer';
 // import Background from './Background.js';
 
@@ -20,8 +18,6 @@ export {
   Navbar,
   TitleText,
   TypingText,
-  StartSteps,
-  NewFeatures,
   ExploreEvent,
   InsightCard,
   Footer,
