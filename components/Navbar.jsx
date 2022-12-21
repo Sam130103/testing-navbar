@@ -13,17 +13,14 @@ import Head from 'next/head';
 const Navbar = () => (
 
   <div>
-  <Head>
-
-  </Head>
-    <body style={{ backgroundColor: '#1A2238' }}>
+    <body style={{ backgroundColor: "#1A2238"}}>
       <header
         style={{ backgroundColor: '#1A2238' }}
         className="header"
         id="header"
       >
      
-        <nav className="nav container">
+        <nav className="nav container" style={{}}>
          <div style={{fontSize:"40px",fontWeight:"50px"}}><h1 style={{color:"white"}}>Techno<span style={{color:"#26A699"}}>Vanza</span></h1></div>
 
           <motion.div
@@ -41,34 +38,34 @@ const Navbar = () => (
                 </a>
               </li>
               <li className="nav__item">
-                <a href="/about" className="nav__link">
+                <a href="/Events" className="nav__link">
                   <i className="bx bx-user nav__icon" />
                   <span className="nav__name">Events</span>
                 </a>
               </li>
 
               <li className="nav__item">
-                <Link href="Gls" className="nav__link">
+                <Link href="GLS/gls" className="nav__link">
                   <i className="bx bx-book-alt nav__icon" />
                   <span className="nav__name">Gls</span>
                 </Link>
               </li>
 
               <li className="nav__item">
-                <a href="/portfolio" className="nav__link">
+                <a href="Gallery/gallery" className="nav__link">
                   <i className="bx bx-briefcase-alt nav__icon" />
                   <span className="nav__name">Gallery</span>
                 </a>
               </li>
 
               <li className="nav__item">
-                <a href="/contactme" className="nav__link">
+                <a href="About/about" className="nav__link">
                   <i className="bx bx-message-square-detail nav__icon" />
                   <span className="nav__name">About</span>
                 </a>
               </li>
               <li className="nav__item">
-                <a href="/Login" className="nav__link">
+                <a href="Login/login" className="nav__link">
                   <i className="bx bx-message-square-detail nav__icon" />
                   <span className="nav__name">Login</span>
                 </a>

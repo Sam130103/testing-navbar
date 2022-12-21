@@ -7,12 +7,14 @@ import StartSteps from './StartSteps';
 import NewFeatures from './NewFeatures';
 import InsightCard from './InsightCard';
 import Footer from './Footer';
-import Background from './Background.js';
+// import Background from './Background.js';
 
 const Navbar = dynamic(() => import('./Navbar'), {
   ssr: false,
 });
-
+const Background = dynamic(() => import('./Background'), {
+  ssr: false,
+});
 export {
   Background,
   Navbar,
