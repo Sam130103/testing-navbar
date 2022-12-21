@@ -2,7 +2,7 @@
 // import  Navbar = dynamic(() => import('./Navbar'), { ssr: false })
 import dynamic from 'next/dynamic';
 import { TypingText, TitleText } from './CustomTexts';
-import ExploreCard from './ExploreCard';
+import ExploreEvent from './Explore_Events';
 import StartSteps from './StartSteps';
 import NewFeatures from './NewFeatures';
 import InsightCard from './InsightCard';
@@ -20,7 +20,7 @@ export {
   TypingText,
   StartSteps,
   NewFeatures,
-  ExploreCard,
+  ExploreEvent,
   InsightCard,
   Footer,
 };

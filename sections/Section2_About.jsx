@@ -63,10 +63,13 @@ const StyledPaper = styled(Paper)(({ theme }) => ({
 }));
 
 const message = 'Guest Lecture Series featuring the worlds greatest speakers!';
+const messageA = 'GLS';
 
 const message1 = 'Explore a plethora of events focused on various technological domains.';
+const messageB = 'Events';
 
 const message2 = 'A footfall of around 80k+ was recorded in the previous year.';
+const messageC = 'Footfall';
 
 const AutoGridNoWrap = () => (
   <Box sx={{ flexGrow: 1, overflow: 'hidden', px: 3 }} className="BOX">
@@ -79,11 +82,10 @@ const AutoGridNoWrap = () => (
     >
       <Grid container wrap="nowrap" spacing={2}>
         <Grid item>
-          {/* <span className="imageContainer" style={{ background: 'white', height: '4rem' }} /> */}
-          <Avatar sx={{ width: 50, height: 50, bgcolor: 'white' }}><Image src={SupportIconImage} /> </Avatar>
+          <Avatar sx={{ width: 50, height: 50, bgcolor: 'white' }}><Image alt="GLS Section" src={SupportIconImage} /> </Avatar>
         </Grid>
         <Grid item xs>
-          <Typography style={{ paddingTop: '5px', color: '#ffffff', fontSize: '22px' }}><h1>Events</h1></Typography>
+          <Typography style={{ paddingTop: '5px', color: '#ffffff', fontSize: '22px' }}>{messageA}</Typography>
           <Typography style={{ color: '#26A699', fontSize: '17px' }}>{message}</Typography>
         </Grid>
       </Grid>
@@ -97,10 +99,10 @@ const AutoGridNoWrap = () => (
     >
       <Grid container wrap="nowrap" spacing={2}>
         <Grid item>
-          <Avatar sx={{ width: 50, height: 50, bgcolor: 'white' }}><Image src={ShieldIconImage} /> </Avatar>
+          <Avatar sx={{ width: 50, height: 50, bgcolor: 'white' }}><Image alt="Events Section" src={ShieldIconImage} /> </Avatar>
         </Grid>
         <Grid item xs>
-          <Typography style={{ paddingTop: '5px', color: '#ffffff', fontSize: '22px' }}><h1>GLS</h1></Typography>
+          <Typography style={{ paddingTop: '5px', color: '#ffffff', fontSize: '22px' }}>{messageB}</Typography>
           <Typography style={{ color: '#26A699', fontSize: '17px' }}>{message1}</Typography>
         </Grid>
       </Grid>
@@ -114,10 +116,10 @@ const AutoGridNoWrap = () => (
     >
       <Grid container wrap="nowrap" spacing={2}>
         <Grid item style={{ color: 'white' }}>
-          <Avatar sx={{ width: 50, height: 50, bgcolor: 'white' }}><Image src={SimpleIconImage} /> </Avatar>
+          <Avatar sx={{ width: 50, height: 50, bgcolor: 'white' }}><Image alt="Footfall Section" src={SimpleIconImage} /> </Avatar>
         </Grid>
         <Grid item xs>
-          <Typography style={{ paddingTop: '5px', color: '#ffffff', fontSize: '22px' }}><h1>Footfall</h1></Typography>
+          <Typography style={{ paddingTop: '5px', color: '#ffffff', fontSize: '22px' }}>{messageC}</Typography>
           <Typography style={{ color: '#26A699', fontSize: '17px' }}>{message2}</Typography>
         </Grid>
       </Grid>

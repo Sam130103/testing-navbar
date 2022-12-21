@@ -1,28 +1,28 @@
-export const exploreWorlds = [
+export const exploreEvents = [
   {
-    id: 'world-1',
-    imgUrl: '/planet-01.png',
-    title: 'The Hogwarts',
+    id: '1',
+    imgUrl: 'events/codestorm.png',
+    title: 'CodeStorm',
   },
   {
-    id: 'world-2',
-    imgUrl: '/planet-02.png',
-    title: 'The Upside Down',
+    id: '2',
+    imgUrl: 'events/icode.png',
+    title: 'I-Code',
   },
   {
-    id: 'world-3',
-    imgUrl: '/planet-03.png',
-    title: 'Kadirojo Permai',
+    id: '3',
+    imgUrl: 'events/peruse.png',
+    title: 'Peruse',
   },
   {
-    id: 'world-4',
-    imgUrl: '/planet-04.png',
-    title: 'Paradise Island',
+    id: '4',
+    imgUrl: 'events/smart-city.png',
+    title: 'Smart City',
   },
   {
-    id: 'world-5',
-    imgUrl: '/planet-05.png',
-    title: 'Hawkins Labs',
+    id: '5',
+    imgUrl: 'events/ultimate-coder.png',
+    title: 'Ultimate Coder',
   },
 ];
 
