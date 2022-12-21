@@ -127,7 +127,7 @@ const AutoGridNoWrap = () => (
   </Box>
 );
 
-export default About;
+export default AutoGridNoWrap;
 
 // export default function About() {
 //   return (

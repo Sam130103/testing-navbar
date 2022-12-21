@@ -8,7 +8,7 @@ import { StartSteps, TitleText, TypingText } from '../components';
 import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
 
 const GlsSophia = () => (
-  <section className={`${styles.paddings} relative z-10`}>
+  <section className={`${styles.paddings} relative z-10`} >
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -33,17 +33,44 @@ const GlsSophia = () => (
         <TypingText title="| Insights of Technovanza" />
         <TitleText title={<><span className="font-bold text-4xl">Dr. A. P. J. Abdul Kalam</span> <br /><span className="text-2xl font-bold">at Techno<span style={{ color: '#26A699' }}>Vanza</span></span> </>} />
         <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
-          {startingFeatures.map((feature, index) => (
-            <StartSteps
-              key={feature}
-              number={`${index < 10 ? '0' : ''} ${index + 1}`}
-              text={feature}
-            />
-          ))}
+        <div>  <div className={`${styles.flexCenter} flex-row`}>
+        <div
+          
+        >
+          <p className="font-bold text-[20px] text-white">
+            <div>
+              
+            </div>
+            <a href="https://youtu.be/_7wdKqGzFx8"><div class="youtube">
+            <span class="arrow"></span>
+            
+          </div></a>
+          </p>
         </div>
+        <p className="flex-1 ml-[30px] font-normal text-[18px] text-[#B0B0B0] leading-[32.4px]" style={{marginTop:"15px"}}>
+          Find a world that suits you and you want to enter
+        </p>
+      </div>
+      </div>
+      <div>  <div className={`${styles.flexCenter} flex-row`}>
+        <div
+         
+        >
+          <p className="font-bold text-[20px] text-white">
+            <div style={{fontSize:"40px",fontWeight:"20px"}}>#</div>
+          </p>
+        </div>
+        <p className="flex-1 ml-[30px] font-normal text-[18px] text-[#B0B0B0] leading-[32.4px]"  style={{marginTop:"15px"}}>
+          Find a world that suits you and you want to enter
+        </p>
+      </div>
+      </div>
+    </div>
+
+
       </motion.div>
     </motion.div>
-  </section>
+  </section> 
 );
 
 export default GlsSophia;
