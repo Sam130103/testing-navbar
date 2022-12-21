@@ -385,30 +385,9 @@ img {
     border-radius: 50% / 11%;
 }
 
-.youtube::before {
-  content: "";
-  line-height: 172px;
-  position: absolute;
-  top: 10%;
-  bottom: 10%;
-  right: -5%;
-  left: -4.5%;
-  background: inherit;
-  border-radius: 5% / 50%;
-}
-.arrow {
+
+/* afermovie */
+.aftermovieyoutube{
   width: 100%;
-  height: var(--height); 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.arrow::before {
-  content: "";
-  width: 0;
-  height: 0;
-  border-top: 8px solid transparent;
-  border-bottom: 8px solid transparent;
-  border-left: 15px solid #fff;
-  z-index: 9;
+  height: 375px;
 }

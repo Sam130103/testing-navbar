@@ -30,8 +30,8 @@ const GlsSophia = () => (
         variants={fadeIn('left', 'tween', 0.2, 1)}
         className="flex-[0.75] flex justify-center flex-col"
       >
-        <TypingText title="| Insights of Technovanza" />
-        <TitleText title={<><span className="font-bold text-4xl">Dr. A. P. J. Abdul Kalam</span> <br /><span className="text-2xl font-bold">at Techno<span style={{ color: '#26A699' }}>Vanza</span></span> </>} />
+        <TypingText title="| Latest GLS Technovanza" />
+        <TitleText title={<><span className="font-bold text-4xl">Sophia: The Social Humanoid</span> <br /><span className="text-2xl font-bold">at Techno<span style={{ color: '#26A699' }}>Vanza</span></span> </>} />
         <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
         <div>  <div className={`${styles.flexCenter} flex-row`}>
         <div

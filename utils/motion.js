@@ -108,7 +108,7 @@ export const fadeIn = (direction, type, delay, duration) => ({
 
 export const planetVariants = (direction) => ({
   hidden: {
-    x: direction === 'left' ? '-100%' : '100%',
+    x: direction === 'left' ? '-200%' : '200%',
     rotate: 120,
   },
   show: {
@@ -116,8 +116,8 @@ export const planetVariants = (direction) => ({
     rotate: 0,
     transition: {
       type: 'spring',
-      duration: 1.8,
-      delay: 0.5,
+      duration: 2.2,
+      delay: 0.3,
     },
   },
 });

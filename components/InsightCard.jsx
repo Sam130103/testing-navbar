@@ -4,14 +4,14 @@ import { motion } from 'framer-motion';
 
 import { fadeIn } from '../utils/motion';
 
-const InsightCard = ({ imgUrl, title, subtitle, index }) => (
+const InsightCard = ({ imgUrl, title, subtitle, index, url }) => (
   <motion.div
     variants={fadeIn('up', 'spring', index * 0.5, 1)}
     className="flex md:flex-row flex-col gap-4"
   >
     <img
       src={imgUrl}
-      alt="planet-01"
+      alt="Insight GLS"
       className="md:w-[270px] w-full h-[250px] rounded-[32px] object-cover"
     />
     <div className="w-full flex justify-between items-center">
@@ -27,11 +27,13 @@ const InsightCard = ({ imgUrl, title, subtitle, index }) => (
       <div
         className="lg:flex hidden items-center justify-center w-[100px] h-[100px] rounded-full bg-transparent border-[1px] border-white"
       >
-        <img
-          src="/arrow.svg"
-          alt="arrow"
-          className="w-[40%] h-[40%] object-contain"
-        />
+        <a href={url}>
+          <img
+            src="/arrow.svg"
+            alt="arrow"
+            className="w-[80%] h-[80%] object-contain"
+          />
+        </a>
       </div>
     </div>
   </motion.div>
