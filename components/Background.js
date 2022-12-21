@@ -1,4 +1,5 @@
 'use client';
+
 import { useCallback } from 'react';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
@@ -18,6 +19,7 @@ const Particle = () => {
 
   return (
     <Particles
+      // className="zindex"
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}

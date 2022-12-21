@@ -7,7 +7,7 @@ import { startingFeatures } from '../constants';
 import { StartSteps, TitleText, TypingText } from '../components';
 import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
 
-const GetStarted = () => (
+const GlsSophia = () => (
   <section className={`${styles.paddings} relative z-10`}>
     <motion.div
       variants={staggerContainer}
@@ -21,8 +21,8 @@ const GetStarted = () => (
         className={`flex-1 ${styles.flexCenter}`}
       >
         <img
-          src="/get-started.png"
-          alt="get-started"
+          src="/homeGLS/sophia.png"
+          alt="Sophia"
           className="w-[90%] h-[90%] object-contain"
         />
       </motion.div>
@@ -30,8 +30,8 @@ const GetStarted = () => (
         variants={fadeIn('left', 'tween', 0.2, 1)}
         className="flex-[0.75] flex justify-center flex-col"
       >
-        <TypingText title="| How Metaversus Works" />
-        <TitleText title={<>Get started with just a few clicks</>} />
+        <TypingText title="| Insights of Technovanza" />
+        <TitleText title={<><span className="font-bold text-4xl">Dr. A. P. J. Abdul Kalam</span> <br /><span className="text-2xl font-bold">at Techno<span style={{ color: '#26A699' }}>Vanza</span></span> </>} />
         <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
           {startingFeatures.map((feature, index) => (
             <StartSteps
@@ -46,4 +46,4 @@ const GetStarted = () => (
   </section>
 );
 
-export default GetStarted;
+export default GlsSophia;

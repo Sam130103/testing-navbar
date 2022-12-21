@@ -1,7 +1,12 @@
 'use client';
 
+import Navbar from '../../components/Navbar';
+
 const gls = () => (
-  <h1>hello akshay</h1>
+  <div>
+    <Navbar />
+    <h1>hello akshay</h1>
+  </div>
 );
 
 export default gls;
