@@ -49,40 +49,43 @@ export const newFeatures = [
 
 export const insights = [
   {
-    imgUrl: '/planet-06.png',
-    title: 'The launch of the Metaverse makes Elon musk ketar-ketir',
+    imgUrl: 'InsightGLS/Sophia.jpg',
+    title: 'Sophia: The Social Humanoid',
     subtitle:
-        'Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Diam maecenas sed enim ut sem viverra alique.',
+        'A Social humanoid robot Sophia attended 2019 Technovanza',
+    url: 'https://youtu.be/_7wdKqGzFx8',
   },
   {
-    imgUrl: '/planet-07.png',
-    title: '7 tips to easily master the madness of the Metaverse',
+    imgUrl: 'InsightGLS/Abdulkalam.png',
+    title: 'Dr. A. P. J. Abdul Kalam',
     subtitle:
-        'Vitae congue eu consequat ac felis donec. Et magnis dis parturient montes nascetur ridiculus mus. Convallis tellus id interdum',
+        'Dr. APJ Abdul Kalam, the former President of India, is known as the Missile Man of India for his contribution to developing Indias missile projects, Prithvi and Agni missiles. He has attended Technovanza 2009 Fest.',
+    url: 'https://vjtitechnovanza.wordpress.com/2015/10/14/dr-apj-abdul-kalams-speech-at-vjti-technovanza/',
   },
   {
-    imgUrl: '/planet-08.png',
-    title: 'With one platform you can explore the whole world virtually',
+    imgUrl: 'InsightGLS/ratantata.jpg',
+    title: 'Ratan Tata',
     subtitle:
-        'Quam quisque id diam vel quam elementum. Viverra nam libero justo laoreet sit amet cursus sit. Mauris in aliquam sem',
+        'Ratan Naval Tata, GBE is an Indian industrialist and former chairman of Tata Sons. He was also the chairman of the Tata Group from 1990 to 2012. Technovanza 2013 was inaugurated by Shri. Ratan Tata',
+    url: 'https://mobile.twitter.com/technovanza/status/284694983750057984',
   },
 ];
 
 export const socials = [
   {
     name: 'twitter',
-    url: '/twitter.svg',
+    url: 'footerSocials/twitter.svg',
   },
   {
     name: 'linkedin',
-    url: '/linkedin.svg',
+    url: 'footerSocials/linkedin.svg',
   },
   {
     name: 'instagram',
-    url: '/instagram.svg',
+    url: 'footerSocials/instagram.svg',
   },
   {
     name: 'facebook',
-    url: '/facebook.svg',
+    url: 'footerSocials/facebook.svg',
   },
 ];
