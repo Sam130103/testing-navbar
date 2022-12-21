@@ -1,12 +1,11 @@
 'use client';
 
-import { Background, Navbar } from '../../components';
+import { Navbar } from '../../components';
 
 const events = () => (
   <div>
-    <Background />
     <Navbar />
-    <h1>hello akshay</h1>
+    <h1>hello akshay . events</h1>
   </div>
 );
 

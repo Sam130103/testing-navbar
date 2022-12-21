@@ -22,7 +22,11 @@ const Navbar = () => (
       >
 
         <nav className="nav container ">
-          <div style={{ fontSize: '40px', fontWeight: '50px' }}><h1 style={{ color: 'white', opacity: 1 }}>Techno<span style={{ color: '#26A699' }}>Vanza</span></h1></div>
+          <div style={{ fontSize: '40px', fontWeight: '50px' }}>
+            <a href="/">
+              <h1 style={{ color: 'white', opacity: 1 }}>Techno<span style={{ color: '#26A699' }}>Vanza</span></h1>
+            </a>
+          </div>
 
           <motion.div
             initial={{ x: '+100vh' }}
@@ -32,8 +36,8 @@ const Navbar = () => (
             id="nav-menu"
           >
             <ul className="nav__list ">
-              <li className="nav__item ">
-                <a href="#home" className="nav__link active-link ">
+              <li className="nav__item " style={{ marginLeft: '15px' }}>
+                <a href="/" className="nav__link  ">
                   <i className="bx bx-home-alt nav__icon" />
                   <span className=" nav__name">Home</span>
                 </a>
@@ -65,7 +69,7 @@ const Navbar = () => (
                   <span className="nav__name">About</span>
                 </a>
               </li>
-              <li className="nav__item">
+              <li className="nav__item" style={{ marginRight: '15px' }}>
                 <a href="/login" className="nav__link">
                   <i className="bx bx-message-square-detail nav__icon" />
                   <span className="nav__name">Login</span>

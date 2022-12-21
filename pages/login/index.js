@@ -1,7 +1,13 @@
 'use client';
 
-const gls = () => (
-  <h1>hello akshay</h1>
+import { Navbar } from '../../components';
+
+const login = () => (
+  <div>
+    <Navbar />
+    <h1>hello akshay</h1>
+  </div>
+
 );
 
-export default gls;
+export default login;
