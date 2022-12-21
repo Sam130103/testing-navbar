@@ -1,6 +1,5 @@
 'use client';
 
-import styles from '../styles';
 import { motion } from 'framer-motion';
 // import { navVariants } from '../utils/motion';
 // import navcss from '../public/Navbar/navbar.css'
@@ -10,21 +9,20 @@ import { motion } from 'framer-motion';
 // const HighlightedText = tw.span`text-blue-500`;
 import Link from 'next/link';
 import Head from 'next/head';
+
 const Navbar = () => (
 
   <div>
-  <Head>
-
-  </Head>
-    <body style={{ backgroundColor: '#1A2238' }}>
+    <Head />
+    <body>
       <header
-        style={{ backgroundColor: '#1A2238' }}
+        // style={{ backgroundColor: '#1A2238' }}
         className="header"
         id="header"
       >
-     
-        <nav className="nav container">
-         <div style={{fontSize:"40px",fontWeight:"50px"}}><h1 style={{color:"white"}}>Techno<span style={{color:"#26A699"}}>Vanza</span></h1></div>
+
+        <nav className="nav container ">
+          <div style={{ fontSize: '40px', fontWeight: '50px' }}><h1 style={{ color: 'white', opacity: 1 }}>Techno<span style={{ color: '#26A699' }}>Vanza</span></h1></div>
 
           <motion.div
             initial={{ x: '+100vh' }}
@@ -33,42 +31,42 @@ const Navbar = () => (
             className="nav__menu"
             id="nav-menu"
           >
-            <ul className="nav__list">
-              <li className="nav__item">
-                <a href="#home" className="nav__link active-link">
+            <ul className="nav__list ">
+              <li className="nav__item ">
+                <a href="#home" className="nav__link active-link ">
                   <i className="bx bx-home-alt nav__icon" />
-                  <span className="nav__name">Home</span>
+                  <span className=" nav__name">Home</span>
                 </a>
               </li>
               <li className="nav__item">
-                <a href="/about" className="nav__link">
+                <a href="/events" className="nav__link">
                   <i className="bx bx-user nav__icon" />
                   <span className="nav__name">Events</span>
                 </a>
               </li>
 
               <li className="nav__item">
-                <Link href="Gls" className="nav__link">
+                <Link href="/gls" className="nav__link">
                   <i className="bx bx-book-alt nav__icon" />
                   <span className="nav__name">Gls</span>
                 </Link>
               </li>
 
               <li className="nav__item">
-                <a href="/portfolio" className="nav__link">
+                <a href="/gallery" className="nav__link">
                   <i className="bx bx-briefcase-alt nav__icon" />
                   <span className="nav__name">Gallery</span>
                 </a>
               </li>
 
               <li className="nav__item">
-                <a href="/contactme" className="nav__link">
+                <a href="/about" className="nav__link">
                   <i className="bx bx-message-square-detail nav__icon" />
                   <span className="nav__name">About</span>
                 </a>
               </li>
               <li className="nav__item">
-                <a href="/Login" className="nav__link">
+                <a href="/login" className="nav__link">
                   <i className="bx bx-message-square-detail nav__icon" />
                   <span className="nav__name">Login</span>
                 </a>
