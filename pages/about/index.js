@@ -1,10 +1,10 @@
 'use client';
 
-import { Navbar } from '../../components';
+import { Navbar_copy } from '../../components';
 
 const about = () => (
   <div>
-    <Navbar />
+    <Navbar_copy />
     <h1>hello akshay</h1>
   </div>
 );

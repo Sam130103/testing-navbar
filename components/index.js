@@ -13,9 +13,13 @@ const Navbar = dynamic(() => import('./Navbar'), {
 const Background = dynamic(() => import('./Background'), {
   ssr: false,
 });
+const Navbar_copy = dynamic(() => import('./Navbar_copy'), {
+  ssr: false,
+});
 export {
   Background,
   Navbar,
+  Navbar_copy,
   TitleText,
   TypingText,
   ExploreEvent,

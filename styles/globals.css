@@ -201,6 +201,15 @@ img {
   top: 0;
   left: 0;
   width: 100%;
+  background:transparent;
+  z-index: var(--z-fixed);
+  transition: .4s;
+}
+.header_copy {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color:#1A2238;
   opacity: 1;
   z-index: var(--z-fixed);
@@ -208,6 +217,10 @@ img {
 }
 
 /*=============== NAV ===============*/
+.transBg{
+background:transparent;
+}
+
 .navbarFont{
   font-family: "Times New Roman", Times, serif;
 }
@@ -420,3 +433,4 @@ img {
   width: 100%;
   height: 375px;
 }
+

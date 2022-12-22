@@ -10,7 +10,7 @@ const Navbar = () => (
     <Head />
     <header
       // style={{ backgroundColor: '#1A2238' }}
-      className="header"
+      className="header_copy"
       id="header"
     >
 
