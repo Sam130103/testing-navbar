@@ -1,12 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-// import { navVariants } from '../utils/motion';
-// import navcss from '../public/Navbar/navbar.css'
-// import Navcss from '../styles'
-// import tw from 'twin.macro';
-// import tailwindConfig from '../tailwind.config';
-// const HighlightedText = tw.span`text-blue-500`;
 import Link from 'next/link';
 import Head from 'next/head';
 
@@ -23,7 +17,7 @@ const Navbar = () => (
       <nav className="nav container ">
         <div style={{ fontSize: '40px', fontWeight: '50px' }}>
           <a href="/">
-            <h1 style={{ color: 'white', opacity: 1 }}>Techno<span style={{ color: '#26A699' }}>Vanza</span></h1>
+            <h1 className="navbarFont" style={{ color: 'white', opacity: 1 }}>Techno<span style={{ color: '#26A699' }}>Vanza</span></h1>
           </a>
         </div>
 
@@ -51,7 +45,7 @@ const Navbar = () => (
             <li className="nav__item">
               <Link href="/gls" className="nav__link">
                 <i className="bx bx-book-alt nav__icon" />
-                <span className="nav__name">Gls</span>
+                <span className="nav__name">GLS</span>
               </Link>
             </li>
 
