@@ -39,15 +39,15 @@ const Hero = () => (
         <img
           src="/home.jpg"
           alt="Cosmos Stars"
-          className="w-full sm:h-[720px] h-[720px] object-cover  z-10 relative"
+          className="w-full md:h-[720px] h-[608px]  object-cover  z-10 relative"
         />
 
         <a href="/">
-          <div className="w-full flex justify-end sm:-mt-[155px] -mt-[100px] pr-[40px] relative z-10">
+          <div className="w-full  flex justify-end sm:-mt-[155px] -mt-[100px] pr-[40px] relative z-10">
             <img
               src="titlebackground/stampLogo.png"
               alt="Techno Logo"
-              className="sm:w-[155px] w-[100px] sm:h-[155px] h-[100px] object-contain"
+              className="md:w-[155px]  w-[100px] sm:h-[155px] h-[100px] object-contain"
             />
           </div>
         </a>
