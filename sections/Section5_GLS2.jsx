@@ -1,11 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-
 import styles from '../styles';
-// import { startingFeatures } from '../constants';
-// import { StartSteps, TitleText, TypingText } from '../components';
-// import { StartSteps, TitleText } from '../components';
 import { TitleText } from '../components';
 import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
 
@@ -32,7 +28,6 @@ const GlsAPJ = () => (
         variants={fadeIn('left', 'tween', 1, 1)}
         className="flex-[0.75] flex justify-center flex-col"
       >
-        {/* <TypingText title="| Insights of Technovanza" /> */}
         <TitleText title={<><span className="font-bold text-4xl">Dr. A. P. J. Abdul Kalam</span> <br /><span className="text-2xl font-bold">at Techno<span style={{ color: '#26A699' }}>Vanza</span></span> </>} />
         <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
           <div>  <div className={`${styles.flexCenter} flex-row`}>

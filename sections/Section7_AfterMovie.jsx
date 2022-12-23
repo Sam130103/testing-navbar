@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 
 import styles from '../styles';
-import { fadeIn, staggerContainer, zoomIn } from '../utils/motion';
+import { fadeIn, staggerContainer } from '../utils/motion';
 
 const Feedback = () => (
   <section className={`${styles.paddings}`}>
@@ -31,6 +31,17 @@ const Feedback = () => (
         <p className="mt-[24px] font-normal sm:text-[24px] text-[18px] sm:leading-[45.6px] leading-[39.6px] text-white">
           “Watch the mesmerizing glory of the previous years’ fest. Get excited for more fun this time!”
         </p>
+        {/* <motion.div
+          variants={zoomIn(0.4, 1)}
+          className="lg:block hidden absolute -left-[10%] top-[3%]"
+        >
+          <a href="/"><img
+            src="titlebackground/stampLogo2.png"
+            alt="techno logo"
+            className="mt-2.5 ml-60 w-[50px] h-[50px] object-contain"
+          />
+          </a>
+        </motion.div> */}
       </motion.div>
 
       <motion.div
@@ -44,16 +55,6 @@ const Feedback = () => (
         /> */}
         <iframe className="aftermovieyoutube" src="https://www.youtube.com/embed/1ar1i4r9DOU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
         {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/1ar1i4r9DOU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen /> */}
-        <motion.div
-          variants={zoomIn(0.4, 1)}
-          className="lg:block hidden absolute -left-[10%] top-[3%]"
-        >
-          <img
-            src="/stamp.png"
-            alt="stamp"
-            className="w-[155px] h-[155px] object-contain"
-          />
-        </motion.div>
       </motion.div>
     </motion.div>
   </section>
