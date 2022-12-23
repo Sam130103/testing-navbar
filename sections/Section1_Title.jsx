@@ -39,7 +39,7 @@ const Hero = () => (
         <img
           src="/home.jpg"
           alt="Cosmos Stars"
-          className="w-full md:h-[720px] h-[608px]  object-cover  z-10 relative"
+          className="w-full md:h-[720px] h-[608px]  object-cover  z-10 relative fix_nav"
         />
 
         <a href="/">
