@@ -1,10 +1,10 @@
 'use client';
 
-import Navbar_copy from '../../components';
+import { NavbarCopy } from '../../components';
 
 const gls = () => (
   <div>
-    <Navbar_copy />
+    <NavbarCopy />
     <h1>hello akshay</h1>
   </div>
 );

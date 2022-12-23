@@ -1,11 +1,11 @@
 'use client';
 
-import { Navbar_copy } from '../../components';
+import { NavbarCopy } from '../../components';
 
 const login = () => (
   <div>
-    <Navbar_copy />
-    <h1>hello akshay</h1>
+    <NavbarCopy />
+    <h1 className="text-white">hello akshay</h1>
   </div>
 
 );

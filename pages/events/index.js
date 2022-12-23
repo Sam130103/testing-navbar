@@ -1,12 +1,12 @@
 'use client';
 
-import { Navbar_copy } from '../../components';
+// import { NavbarCopy } from '../../components';
 
-const events = () => (
+const Events = () => (
   <div>
-    <Navbar_copy />
-    <h1>hello akshay . events</h1>
+    {/* <NavbarCopy /> */}
+    <h1>hello alshay</h1>
+    events
   </div>
 );
-
-export default events;
+export default Events;

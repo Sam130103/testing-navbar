@@ -156,7 +156,9 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
-  /* background-image: url("../public/Starry\ night.jpg"); */
+  /* background-image: url("../public/home.jpg");
+   */
+   /* background-color: black; */
 }
 
 ul {
@@ -205,16 +207,16 @@ img {
   z-index: var(--z-fixed);
   transition: .4s;
 }
-@media screen and (max-width:768px){
-  .header {
-  position: fixed;
+@media screen and (max-width:768px) {
+  .header{
+    position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color:rgba(0,0,0,1);
+  background-color: bl;
   z-index: var(--z-fixed);
   transition: .4s;
-}
+  }
 }
 .header_copy {
   position: fixed;
@@ -354,7 +356,7 @@ background:transparent;
   }
   .nav__name {
     font-size: var(--normal-font-size);
-    /* display: block; */ /* Minimalist design, visible labels */
+    /* display: block; Minimalist design, visible labels */
   }
   .nav__link:hover {
     color: var(--first-color);
@@ -448,5 +450,15 @@ background:transparent;
 .fix_nav{
 margin-bottom:30px;
 }
+}
+.loginout{
+  color:white;
+  background-color:#6415FF;
+  padding-left:10px;
+  padding-right:10px;
+  border-radius:7px
+}
+.loginout:hover{
+color:white
 }
 

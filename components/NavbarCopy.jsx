@@ -15,15 +15,15 @@ const Navbar = () => (
     >
 
       <nav className="nav container ">
-     
-        <div style={{ fontSize: '40px', fontWeight: '50px',display:"flex",flexDirection:'row' }}>
-        <div style={{marginTop:"5px"}}>
-        <img
-        src="/LOGO_40PX.png"
-        alt="Cosmos Stars"
-       // className="w-full sm:h-[720px] h-[720px] object-cover  z-10 relative"
-      />
-        </div>
+
+        <div style={{ fontSize: '40px', fontWeight: '50px', display: 'flex', flexDirection: 'row' }}>
+          <div style={{ marginTop: '5px' }}>
+            <img
+              src="/LOGO_40PX.png"
+              alt="Cosmos Stars"
+            // className="w-full sm:h-[720px] h-[720px] object-cover  z-10 relative"
+            />
+          </div>
           <a href="/">
             <h1 className="navbarFont" style={{ color: 'white', opacity: 1 }}>Techno<span style={{ color: '#26A699' }}>Vanza</span></h1>
           </a>
