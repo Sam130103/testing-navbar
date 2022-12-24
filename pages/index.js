@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { Footer, Navbar } from '../components';
 import { About, ExploreEvents, AfterMovie, GLS1, Title, PastGLS, GLS2 } from '../sections';
-
+import Loginloginout from './loginout';
 export default function Home() {
   useEffect(() => {
     document.body.style.backgroundColor = 'black';
