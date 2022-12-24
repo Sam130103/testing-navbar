@@ -1,4 +1,4 @@
-export const gls = [
+export const glsdata = [
 
     {
       imageSrc:

@@ -3,8 +3,8 @@
 import React from 'react'
 
 const Glscard=({ imgSrc, nam }) =>(
-        <div class="card-grid-space">
-            <a class="card" style={{ backgroundImage: `url('${imgSrc}')` }}>
+        <div className="card-grid-space">
+            <a className="card" style={{ backgroundImage: `url('${imgSrc}')` }}>
                 {console.log(nam)}
                 <div style={{ marginTop: "130px" }}>
                     <div style={{ marginRight: '100px' }}>

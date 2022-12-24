@@ -3,10 +3,11 @@
 // import { rgbToHex } from "@mui/material";
 
 // import { NavbarCopy } from '../../components';
-import { gls } from '../../utils/gls.js'
-import {Glscard} from '../../components/Glscards/Glscard'
+import { glsdata } from '../../utils/glsdata.js'
+// import {Glscard} from '../../components/Glscards/Glscard'
+import {Glsmap} from '../../components/Glscards/Glsmap'
 const Gls = () => (
- <Glscard/>
+ <Glsmap/>
 );
 
 export default Gls;
