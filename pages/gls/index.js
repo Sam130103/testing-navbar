@@ -1,12 +1,12 @@
 'use client';
 
-import { NavbarCopy } from '../../components';
+// import { rgbToHex } from "@mui/material";
 
-const gls = () => (
-  <div>
-    <NavbarCopy />
-    <h1>hello akshay</h1>
-  </div>
+// import { NavbarCopy } from '../../components';
+import { gls } from '../../utils/gls.js'
+import {Glscard} from '../../components/Glscards/Glscard'
+const Gls = () => (
+ <Glscard/>
 );
 
-export default gls;
+export default Gls;
