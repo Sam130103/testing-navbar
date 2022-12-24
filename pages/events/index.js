@@ -1,12 +1,12 @@
 'use client';
 
-// import { NavbarCopy } from '../../components';
+import EventsCard from '../../components/events/MapEvent';
+import { Navbar } from '../../components';
 
 const Events = () => (
   <div>
-    {/* <NavbarCopy /> */}
-    <h1>hello alshay</h1>
-    events
+    <Navbar />
+    <EventsCard />
   </div>
 );
 export default Events;
