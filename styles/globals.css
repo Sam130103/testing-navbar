@@ -573,8 +573,8 @@ a {
   font-family: 'Heebo';
   --bg-filter-opacity: 0.5;
   background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
-  height: 10em;
-  width: 10em;
+  height: 20em;
+  width: 15em;
   font-size: 1.5em;
   color: white;
   border-radius: 1em;
@@ -648,9 +648,6 @@ a {
   width: 200%;
   height: 200%;
 }
-
-
-
 .card:hover:before, .card:hover:after {
   transform: scale(1);
 }
@@ -728,4 +725,12 @@ a {
   .info h1 {
     margin: 0;
   }
+}
+.textdata{
+  visibility: 'hidden';
+  opacity: 0;
+}
+.textdata:hover{
+  background-color: white;
+  opacity: 1;
 }
