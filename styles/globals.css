@@ -117,7 +117,8 @@
   --first-color: hsl(var(--hue), var(--sat), 40%);
   --first-color-alt: hsl(var(--hue), var(--sat), 36%);
   --title-color: hsl(var(--hue), 12%, 15%);
-  --text-color: hsl(var(--hue), 8%, 35%);
+  /* --text-color: hsl(var(--hue), 8%, 35%); */
+  --text-color: black;
   --body-color: hsl(var(--hue), 100%, 99%);
   --container-color: #1A2238;
 
@@ -460,6 +461,82 @@ margin-bottom:30px;
 }
 .loginout:hover{
 color:white
+}
+
+/* events section hover button */
+  /* --------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+
+/* .btnevent{
+font-family: Nunito;
+font-weight: 0;
+font-size: 14px;
+color: #fff;
+background-color: #4c49e7;
+padding: 10px 30px;
+border: solid #0066cc 2px;
+box-shadow: rgb(0, 0, 0) 3px 7px 9px -4px;
+border-radius: 50px;
+transition : 1119ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+text-transform: uppercase;
+}
+
+.btnevent:hover{
+
+transition : 1119ms;
+padding: 10px 14px;
+transform : translateY(-1px);
+background-color: #ffffff;
+color: #4c49e7;
+border: solid 2px #4c49e7;
+} */
+
+/* CSS */
+.button-38 {
+  background-color: #6415;
+  border: 0;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #111827;
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  padding: .75rem 1rem;
+  text-align: center;
+  text-decoration: none #D1D5DB solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-38:hover {
+  /* transform : translateY(-3px); */
+  /* background-color: rgb(249,250,251); */
+  box-shadow:5px 5px 15px black;
+}
+
+.button-38:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.button-38:focus-visible {
+  box-shadow:none;
+}
+
+.divbutton38:hover{
+  transform : translateY(-4px);
+  transition : 1119ms;
+  /* box-shadow:5px 5px 15px black; */
 }
 
 
