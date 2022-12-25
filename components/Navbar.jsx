@@ -4,11 +4,13 @@ import Link from 'next/link';
 import Head from 'next/head';
 import Loginout from '../pages/loginout'
 import { useSession, signIn, signOut } from "next-auth/react"
+import Example from './dropdown';
 export default function Navbar() {
   const { data: session } = useSession();
   return (
     <div>
       <Head />
+      
       <header
         // style={{ backgroundColor: '#1A2238' }}
         className="header"
@@ -83,9 +85,9 @@ export default function Navbar() {
                 {
                   session ?
                     <>
-                      <button onClick={() => { signOut() }} className="loginout">
-                        <a className='nav_item nav_link  nav_name'>Logout</a>
-                      </button>
+                   
+                  <button style={{height:'22px',width:'22px',color:'white'}}>Logout</button>
+
                     </>
                     :
 

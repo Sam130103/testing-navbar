@@ -5,10 +5,21 @@ const Loginout = () => {
   const { data: session } = useSession();
   if (session) {
     return (
-      <div className="">
-        <button onClick={() => { signOut(); }} style={{ color: 'white' }}>
-          <a>Logout</a>
-        </button>
+      <div >
+        <div class="dropdown show">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {session.user.name}
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Download Ticket</a>
+            <button onClick={() => { signOut(); }} style={{ color: 'white' }}>
+              <a>Logout</a>
+            </button>
+
+          </div>
+        </div>
+
       </div>
     );
   }
