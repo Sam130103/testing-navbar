@@ -4,7 +4,7 @@ import { About, ExploreEvents, AfterMovie, GLS1, Title, PastGLS, GLS2 } from '..
 import Loginloginout from './loginout';
 export default function Home() {
   useEffect(() => {
-    document.body.style.backgroundColor = 'black';
+    // document.body.style.backgroundColor = 'black';
   }, []);
 
   return (

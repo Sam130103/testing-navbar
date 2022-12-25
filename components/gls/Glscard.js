@@ -1,21 +1,18 @@
 'use client';
 
-const Glscard = ({ imgSrc, nam }) => (
+const Glscard = ({ imgSrc, nam, des, ur }) => (
   <div>
-    <div className="card-grid-space">
-      <a className="card" style={{ backgroundImage: `url('${imgSrc}')` }}>
-        {/* {console.log(nam)} */}
-        {/* <h1>hello akshay</h1> */}
-        <div style={{marginTop:'200px'}} className="textdata">
-          <h1 className="text-black">{nam}</h1>
-          <p className="text-black">The syntax of a language is how it works. How to actually write it. Learn HTML syntax…</p>
-          {/* <div class="date">6 Oct 2017</div> */}
-          <div className="tags">
-            <div className="tag text-black" >HTML</div>
-          </div>
-        </div>
-      </a>
+    {/* <Col size={12} sm={6} md={4}> */}
+    <div className="proj-imgbx h-96 w-96 md:h-56 md:w-56 sm:h-60 sm:w-60 fill">
+      <img src={imgSrc} />
+      <div className="proj-txtx">
+        <h4>{nam}</h4>
+        <span>{des}</span>
+        <p />
+        <button href={ur} className="border-t button-38 border-grey-light  uppercase text-xs no-underline tracking-wide mt-2 pt-2">More Info.</button>
+      </div>
     </div>
+    {/* </Col> */}
   </div>
 );
 export default Glscard;
