@@ -3,29 +3,45 @@ import { useState, useEffect } from 'react';
 import { eventsList } from '../../../utils/eventsData.js';
 
 const EventPage = () => {
+  const [eventIdActual, seteventidActual] = useState('Event ID');
   const [eventName, seteventName] = useState('EventName');
   const [eventDesc, seteventDesc] = useState('EventDescription');
   const router = useRouter();
-  const { eventID } = router.query;
+  const eventIdRouter = router.query.eventID;
+  // console.log(eventIdRouter);
 
   useEffect(() => {
     eventsList.forEach((event) => {
-      if (event.id === eventID) {
+      if (event.id === eventIdRouter) {
         // <h1>hello, {event}</h1>;
-        seteventName(event.id);
+        // alert('hello');
+        seteventidActual(event.id);
+        seteventName(event.id); // id and name refers same here for some reason
         seteventDesc(event.description);
-      } else {
-        <h1>Error 404</h1>;
       }
     }, []);
   });
 
   return (
     <div>
-      <h1>EventName: {eventName}</h1>
-      <h1>EventDescription: {eventDesc}</h1>
+      {eventIdActual === eventIdRouter ? (
+        <div>
+          <h1>EventName: {eventName}</h1>
+          <h1>EventDescription: {eventDesc}</h1>
+        </div>
+
+      ) : (
+        <h1>error/Notfound page render here!!</h1>
+      )}
+
     </div>
   );
 };
 
 export default EventPage;
+
+export async function generateStaticParams() {
+  return eventsList.map((event) => ({
+    eventID: event.id,
+  }));
+}
