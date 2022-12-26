@@ -1,5 +1,7 @@
 'use client';
 
+import Link from "next/link";
+
 // import Image from 'next/image';
 
 const Card = ({ id, name, desc, imgsrc, url }) => (
@@ -30,7 +32,7 @@ const Card = ({ id, name, desc, imgsrc, url }) => (
             <div className="divbutton38">
               {/* <button href={url} className="btnevent">Register <img src="https://www.htmlcssbuttongenerator.com/iconExample-text-align-left-lined.svg" style={{width:'21px', marginLeft:'6px' , marginRight:'3px', flexDirection: 'row' }} /></button> */}
               {/* <button href={url}  className="border-t hover:font-bold bg-sky-300 border-grey-light  uppercase text-xs no-underline tracking-wide pt-2">register</button> */}
-              <button href={url} className="border-t button-38 border-grey-light  uppercase text-xs no-underline tracking-wide pt-2">register</button>
+              <Link href={url} className="border-t button-38 border-grey-light hover:text-black uppercase text-xs no-underline tracking-wide pt-2">register</Link>
             </div>
           </div>
         </div>
