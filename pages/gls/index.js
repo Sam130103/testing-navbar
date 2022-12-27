@@ -7,7 +7,7 @@
 import { Navbar } from '../../components';
 import GlsHeading from '../../components/gls/GlsHeading';
 import Glsmap from '../../components/gls/Glsmap';
-
+import Glshead from '../../components/gls/Glshead';
 const Gls = () => (
   <div>
     
@@ -15,7 +15,7 @@ const Gls = () => (
   //     hello
   //   </div> */}
   <Navbar />
-    <Glsmap/>
+  <Glshead/>
   </div>
 );
 

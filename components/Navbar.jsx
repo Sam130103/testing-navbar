@@ -73,25 +73,30 @@ export default function Navbar() {
                 </a>
               </li>
               <li className="nav__item">
-                <a href="/register_team" className="nav__link">
+                <a href="/mainani" className="nav__link">
                   <i className="bx bx-message-square-detail nav__icon" />
                   <span className="nav__name">About</span>
                 </a>
               </li>
               {
                 session ?
-                  <>
-                    
-                  </>
-                  :
-                  <>
-                    <li className="nav__item">
-                      <a onClick={() => signIn()} className="nav__link">
+                <>
+                     <li className="nav__item">
+                      <a onClick={() => { signOut(); }}  className="nav__link">
                         <i className="bx bx-message-square-detail nav__icon" />
-                        <span className="nav__name">Login</span>
+                        <span className="nav__name">Logout</span>
                       </a>
-                    </li>
-                  </>
+                     </li>
+                </>
+                :
+                <>
+                     <li className="nav__item">
+                      <a onClick={() => signIn()} className="nav__link">
+                      <i className="bx bx-message-square-detail nav__icon" />
+                      <span className="nav__name">Login</span>
+                    </a>
+              </li>
+                </>
               }
             </ul>
           </motion.div>
