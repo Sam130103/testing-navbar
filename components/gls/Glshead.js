@@ -19,7 +19,7 @@ function Glshead() {
             
             <div class="image-container">
               <img src="https://indusscrolls.com/wp-content/uploads/2020/07/Gaur-Gopal-Das.jpg" alt=""/>
-            </div>
+                </div>
           </div>
           <div class="marquee__section">
             <div class="image-container">
