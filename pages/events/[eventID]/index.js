@@ -1,6 +1,8 @@
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 import { eventsList } from '../../../utils/eventsData.js';
+import Finevent from '../../../components/events/Finevent';
+import Navbar from '../../../components/Navbar.jsx';
 
 const EventPage = () => {
   const [eventIdActual, seteventidActual] = useState('Event ID');
@@ -26,8 +28,11 @@ const EventPage = () => {
     <div>
       {eventIdActual === eventIdRouter ? (
         <div>
-          <h1>EventName: {eventName}</h1>
-          <h1>EventDescription: {eventDesc}</h1>
+          <Navbar />
+          <Finevent
+            evname={eventName}
+            evdep={eventDesc}
+          />
         </div>
 
       ) : (
