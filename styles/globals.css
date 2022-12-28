@@ -1,14 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face{
+  font-family: "typewriter";
+  src: url("/fonts/typewriter/typewriter.ttf");
+}
+
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Eudoxus Sans", sans-serif;
+  font-family: "typewriter","Eudoxus Sans", sans-serif;
   scroll-behavior: smooth;
 }
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #26a699;
+}
+
 
 .gradient-01 {
   background-image: linear-gradient(
@@ -114,7 +131,7 @@
   --container-color: #1A2238;
 
   /*========== Font and typography ==========*/
-  --body-font: 'Open Sans', sans-serif;
+  --body-font: 'typewriter','Open Sans', sans-serif;
   --h1-font-size: 1.5rem;
   --normal-font-size: 1rem;
   --tiny-font-size: 1rem;
@@ -640,6 +657,13 @@ input:hover {
   border:2px solid white;
 }
 
+.centergif {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 
 
 
@@ -653,9 +677,7 @@ input:hover {
     no-repeat center center fixed;
   background-size: cover;
 } */
-.backevent {
-  color: rgb(255, 255, 255);
-}
+
 
 #efeitologo {
   transition: all 0.5s;
@@ -861,7 +883,7 @@ li {
   margin: 0;
   padding: 1.5rem;
   min-height: 400px;
-  background-image: url(https://wpamelia.com/wp-content/uploads/2018/11/ezgif-2-078cdcb3f1d3.gif);
+  background-image: url('/home.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -870,8 +892,8 @@ li {
 }
 .opening__title {
   font-family: "Roboto Mono", sans-serif;
-  font-size: 1.25rem;
-  margin: 1.5rem 0;
+  font-size: 1.25 rem;
+  margin: .8rem 0;
 }
 .opening__title::after {
   content: "";
@@ -1763,3 +1785,39 @@ li {
   margin-top:350px
  }
 }
+
+
+@font-face{
+  font-family: "squid";
+  src: url("/fonts/gamesquid/squid.ttf");
+}
+
+
+@font-face{
+  font-family: "magic";
+  src: url("/fonts/magic/magic1.ttf");
+}
+
+@font-face{
+  font-family: "adventure";
+  src: url("/fonts/adventure/adven.ttf");
+}
+@font-face{
+  font-family: "prosto";
+  src: url("/fonts/prostoOne/prosto.ttf");
+}
+
+@font-face{
+  font-family: "arvo";
+  src: url("/fonts/arvo/arvo.ttf");
+}
+@font-face{
+  font-family: "merriweatherLightItalics";
+  src: url("/fonts/merriweather/lightItalic.ttf");
+}
+@font-face{
+  font-family: "merriweatherLight";
+  src: url("/fonts/merriweather/Light.ttf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');

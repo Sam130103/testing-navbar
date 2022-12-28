@@ -44,8 +44,8 @@ const AutoGridNoWrap = () => (
           <Avatar sx={{ width: 50, height: 50, bgcolor: 'white' }}><Image alt="GLS Section" src={SupportIconImage} /> </Avatar>
         </Grid>
         <Grid item xs>
-          <Typography style={{ paddingTop: '5px', color: '#ffffff', fontSize: '22px' }}>{messageA}</Typography>
-          <Typography style={{ color: '#26A699', fontSize: '17px' }}>{message}</Typography>
+          <Typography style={{ paddingTop: '5px', color: '#ffffff', fontSize: '25px', fontFamily: 'arvo,sans-serif' }}>{messageA}</Typography>
+          <Typography style={{ color: '#26A699', fontSize: '17px', fontFamily: 'merriweatherLight' }}>{message}</Typography>
         </Grid>
       </Grid>
     </StyledPaper>
@@ -61,8 +61,8 @@ const AutoGridNoWrap = () => (
           <Avatar sx={{ width: 50, height: 50, bgcolor: 'white' }}><Image alt="Events Section" src={ShieldIconImage} /> </Avatar>
         </Grid>
         <Grid item xs>
-          <Typography style={{ paddingTop: '5px', color: '#ffffff', fontSize: '22px' }}>{messageB}</Typography>
-          <Typography style={{ color: '#26A699', fontSize: '17px' }}>{message1}</Typography>
+          <Typography style={{ paddingTop: '5px', color: '#ffffff', fontSize: '25px', fontFamily: 'arvo' }}>{messageB}</Typography>
+          <Typography style={{ color: '#26A699', fontSize: '17px', fontFamily: 'merriweatherLight' }}>{message1}</Typography>
         </Grid>
       </Grid>
     </StyledPaper>
@@ -78,8 +78,8 @@ const AutoGridNoWrap = () => (
           <Avatar sx={{ width: 50, height: 50, bgcolor: 'white' }}><Image alt="Footfall Section" src={SimpleIconImage} /> </Avatar>
         </Grid>
         <Grid item xs>
-          <Typography style={{ paddingTop: '5px', color: '#ffffff', fontSize: '22px' }}>{messageC}</Typography>
-          <Typography style={{ color: '#26A699', fontSize: '17px' }}>{message2}</Typography>
+          <Typography style={{ paddingTop: '5px', color: '#ffffff', fontSize: '25px', fontFamily: 'arvo'}}>{messageC}</Typography>
+          <Typography style={{ color: '#26A699', fontSize: '17px', fontFamily: 'merriweatherLight' }}>{message2}</Typography>
         </Grid>
       </Grid>
     </StyledPaper>

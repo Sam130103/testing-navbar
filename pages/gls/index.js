@@ -17,6 +17,7 @@ const Gls = () => (
   //   </div> */}
     <Navbar />
     <Glshead />
+    <Glsmap />
   </div>
 );
 

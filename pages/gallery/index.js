@@ -1,10 +1,10 @@
 'use client';
 
-import { NavbarCopy } from '../../components';
+import { Navbar } from '../../components';
 
 const gallery = () => (
   <div>
-    <NavbarCopy />
+    <Navbar />
     <h1>hello akshay</h1>
   </div>
 

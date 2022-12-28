@@ -3,11 +3,13 @@ import { useState, useEffect } from 'react';
 import { eventsList } from '../../../utils/eventsData.js';
 import Finevent from '../../../components/events/Finevent';
 import Navbar from '../../../components/Navbar.jsx';
+import Error404 from '../../404';
 
 const EventPage = () => {
   const [eventIdActual, seteventidActual] = useState('Event ID');
   const [eventName, seteventName] = useState('EventName');
   const [eventDesc, seteventDesc] = useState('EventDescription');
+  const [eventImg, seteventImg] = useState('/home.jpg');
   const router = useRouter();
   const eventIdRouter = router.query.eventID;
   // console.log(eventIdRouter);
@@ -20,6 +22,7 @@ const EventPage = () => {
         seteventidActual(event.id);
         seteventName(event.id); // id and name refers same here for some reason
         seteventDesc(event.description);
+        seteventImg(event.imageSrc);
       }
     }, []);
   });
@@ -30,13 +33,14 @@ const EventPage = () => {
         <div>
           <Navbar />
           <Finevent
-            evname={eventName}
-            evdep={eventDesc}
+            evName={eventName}
+            evDesc={eventDesc}
+            evImg={eventImg}
           />
         </div>
 
       ) : (
-        <h1>error/Notfound page render here!!</h1>
+        <Error404 />
       )}
 
     </div>

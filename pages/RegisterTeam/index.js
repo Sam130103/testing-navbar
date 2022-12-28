@@ -2,11 +2,11 @@
 
 import { NavbarCopy, Navbar, Background } from '../../components';
 
-const register_team = () => (
+const RegisterTeam = () => (
   <div>
     <Navbar />
     <div className="aboutpage mt-12 mb-7">
-      <div className="container  flex justify-center items-center h-screen mx-auto " className="aboutcard">
+      <div className="container  aboutcard flex justify-center items-center h-screen mx-auto ">
         <div action="#" className="formcard ">
           <div className="p-3">
             <input className="outline-none py-2 pr-4 block w-full text-white " type="text" placeholder="Team Name" required />
@@ -78,4 +78,4 @@ const register_team = () => (
   </div>
 );
 
-export default register_team;
+export default RegisterTeam;

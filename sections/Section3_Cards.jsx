@@ -22,7 +22,7 @@ const Explore = () => {
       >
         <TypingText title="| The Events" textStyles="text-center" />
         <TitleText
-          title={<>Highlight <span className="font-bold" style={{ color: '#26A699' }}>Events</span> </>}
+          title={<><span style={{ fontFamily: 'adventure' }}>Highlight </span><span className="font-bold" style={{ color: '#26A699', fontFamily: 'adventure' }}>Events</span> </>}
           textStyles="text-center"
         />
         <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
