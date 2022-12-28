@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 import { eventsList } from '../../../utils/eventsData.js';
-
+import Finevent from '../finevent.js';
 const EventPage = () => {
   const [eventIdActual, seteventidActual] = useState('Event ID');
   const [eventName, seteventName] = useState('EventName');
@@ -25,10 +25,7 @@ const EventPage = () => {
   return (
     <div>
       {eventIdActual === eventIdRouter ? (
-        <div>
-          <h1>EventName: {eventName}</h1>
-          <h1>EventDescription: {eventDesc}</h1>
-        </div>
+         <Finevent evname={eventName} evdep={eventDesc}/>
 
       ) : (
         <h1>error/Notfound page render here!!</h1>
