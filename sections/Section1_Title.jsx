@@ -34,7 +34,7 @@ const Hero = () => (
         variants={slideIn('right', 'tween', 0.2, 1)}
         // className="relative w-full md:-mt-[20px] -mt-[12px]"
       >
-        <div className="absolute w-full h-[300px] object-fill z-[0] -top-[30px]" />
+        <div className="absolute w-full h-[300px] object-fill z-[0] -top-[30px] canvas_container" />
 
         <img
           src="/home.jpg"

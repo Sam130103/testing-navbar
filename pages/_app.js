@@ -6,9 +6,8 @@ import { AppProps } from 'next/app';
 import { Background } from '../components';
 
 const MyApp = ({ Component, pageProps: { session, ...pageProps } }, AppProps) => (
-
   <SessionProvider session={session}>
-    <Background />
+    {/* <Background /> */}
     <Head>
       <title>Technovanza VJTI 2022-23 | Revamping the Technical Cosmos</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
