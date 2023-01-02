@@ -1,11 +1,10 @@
 'use client';
 
-import { NavbarCopy } from '../../components';
+import Globeanimi from './Globeanimi';
 
 const gallery = () => (
   <div>
-    <NavbarCopy />
-    <h1>hello akshay</h1>
+    <h1>hello gallery</h1>
   </div>
 
 );

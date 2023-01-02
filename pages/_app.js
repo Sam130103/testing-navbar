@@ -8,14 +8,9 @@ import Script from 'next/script';
 import Globe from './gls/globe';
 import * as THREE from '../public/three.module.js';
 const MyApp = ({ Component, pageProps: { session, ...pageProps } }, AppProps) => (
-  <>
-  // <Script src='js/three.js'/>
-  <Script type ="module" src='/plain.js' />
-  <Script src='https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.min.js'/>
-  <Script src='https://cdn.jsdelivr.net/npm/three@0.121.1/examples/js/controls/OrbitControls.js'/>
-  <Script src='https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js'/>
-  <SessionProvider session={session}>
 
+  <SessionProvider session={session}>
+    {/* <Background /> */}
     <Head>
       <title>Technovanza VJTI 2022-23 | Revamping the Technical Cosmos</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />

@@ -34,8 +34,8 @@ export default function Navbar() {
               />
             </div>
             <a href="/">
-              <h1 className="navbarFont ml-3" style={{ color: 'white' }}>
-                Techno<span style={{ color: '#26A699' }}>Vanza</span>
+              <h1 className="navbarFont ml-3" style={{ color: 'white',fontFamily:"squid" }}>
+                Techno<span style={{ color: '#26A699',fontFamily:"squid" }}>Vanza</span>
               </h1>
             </a>
           </div>

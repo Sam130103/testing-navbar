@@ -15,8 +15,9 @@ const Gls = () => (
     {/* //   <div className="font-bold text-white">
   //     hello
   //   </div> */}
-
-   <Globe/>
+    <Navbar />
+    <Glshead />
+    <Glsmap />
   </div>
 );
 
