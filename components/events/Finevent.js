@@ -11,9 +11,9 @@ const Finevent = ({ evname, evdep }) => (
     </section>
     <div style={{ textAlign: 'center' }}>
 
-      <h1 className="page-logo" alt="some text" width="40%" height="40%" id="efeitologo"
-        style={{ fontSize: '50px' }}
-      > TechnoVanza
+      <h1 className="page-logo " alt="some text" width="40%" height="40%" id="efeitologo"
+        style={{ fontSize: '50px' ,fontFamily:'Stonefont'}}
+      > Techno<span style={{color:'#3C89f6',fontFamily:'Stonefont'}}>Vanza</span>
       </h1>
     </div>
     <br />
