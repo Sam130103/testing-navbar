@@ -8,7 +8,7 @@ import Script from 'next/script';
 import Globe from './gls/globe';
 import * as THREE from '../public/three.module.js';
 const MyApp = ({ Component, pageProps: { session, ...pageProps } }, AppProps) => (
-
+<>
   <SessionProvider session={session}>
     {/* <Background /> */}
     <Head>
